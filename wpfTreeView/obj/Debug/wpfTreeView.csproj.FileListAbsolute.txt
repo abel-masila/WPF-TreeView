@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\bin\Debug\wpfTreeView.exe.config
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\bin\Debug\wpfTreeView.exe
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\bin\Debug\wpfTreeView.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\MainWindow.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\App.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView_MarkupCompile.cache
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView_MarkupCompile.lref
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\MainWindow.baml
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.g.resources
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.exe
+c:\users\administrator\documents\visual studio 2017\Projects\wpfTreeView\wpfTreeView\obj\Debug\wpfTreeView.pdb
