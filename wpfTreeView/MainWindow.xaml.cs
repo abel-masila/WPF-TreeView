@@ -53,7 +53,7 @@ namespace wpfTreeView
         {
             var item = (TreeViewItem)sender;
             //if item contains dummy data
-            if (item.Items.Count != 1 || item.Items[0)!= null)
+            if (item.Items.Count != 1 || item.Items[0]!= null)
                 return;
             //Clear dummy data
             item.Items.Clear();
@@ -76,14 +76,36 @@ namespace wpfTreeView
             {
                 var subItem=new TreeViewItem()
                 {
-                    Header=Path.GetDirectoryName(directoryPath),
+                    Header=GetFileFolderName(directoryPath),
                     Tag=directoryPath
                 };
                 subItem.Items.Add(null);
 
                 subItem.Expanded += Folder_Expanded;
+                item.Items.Add(subItem);
             });
         }
         #endregion
+        /// <summary>
+        /// Find the file or foldernamae from the fullpath 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public static string GetFileFolderName(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                return string.Empty;
+            }
+            var normalizedPath=path.Replace('/','\\');
+
+            var lastIndex = normalizedPath.LastIndexOf('\\');
+            //if no backlash,return path itself
+            if (lastIndex <= 0)
+                return path;
+            //return name after the last backlash
+            return path.Substring(lastIndex+1);
+
+        }
     }
 }
