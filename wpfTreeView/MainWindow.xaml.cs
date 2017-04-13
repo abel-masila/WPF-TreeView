@@ -84,6 +84,36 @@ namespace wpfTreeView
                 subItem.Expanded += Folder_Expanded;
                 item.Items.Add(subItem);
             });
+
+            // Create a blank list for files
+            var files = new List<string>();
+
+            // Try and get files from the folder
+            // ignoring any issues doing so
+            try
+            {
+                var fs = Directory.GetFiles(fullpath);
+
+                if (fs.Length > 0)
+                    files.AddRange(fs);
+            }
+            catch { }
+
+            // For each file...
+            files.ForEach(filepath =>
+            {
+                // Create file item
+                var subItem = new TreeViewItem()
+                {
+                    // Set header as file name
+                    Header = GetFileFolderName(filepath),
+                    // And tag as full path
+                    Tag = filepath
+                };
+
+                // Add this item to the parent
+                item.Items.Add(subItem);
+            });
         }
         #endregion
         /// <summary>
@@ -104,6 +134,7 @@ namespace wpfTreeView
             if (lastIndex <= 0)
                 return path;
             //return name after the last backlash
+    
             return path.Substring(lastIndex+1);
 
         }
